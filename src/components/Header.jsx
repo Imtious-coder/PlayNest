@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-1 px-7 flex justify-between items-center fixed top-0 z-50 w-full border-b-[0.3px] border-[#babaff]">
+    <header className="bg-black py-1 px-7 flex justify-between items-center sticky top-0 z-50 w-full border-b-[0.3px] border-[#babaff]">
       {/* LEFT SECTION */}
       <div className="flex lg:gap-14 gap-4">
         <img
@@ -42,7 +42,7 @@ const Header = () => {
           href="#"
           className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-300 after:transition-all hover:after:w-full text-nowrap"
         >
-          <i class="bx  bx-diamond-alt"></i> Arena
+          <i class="bx  bx-diamond"></i> Arena
         </a>
         <a
           href="#"
