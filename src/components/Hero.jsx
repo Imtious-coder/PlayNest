@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <main className="relative w-full h-screen overflow-hidden flex justify-center mb-[5%]">
       <video
-        src="videos/hero.mp4"
+        src="/videos/hero.mp4"
         autoPlay
         loop
         muted
@@ -12,7 +12,7 @@ const Hero = () => {
 
       <div className="absolute bottom-[15%] flex flex-col items-center gap-5">
         <img
-          src="images/illu-text.png"
+          src="/images/illu-text.png"
           alt="illu-text"
           className="md:w-[30rem] w-[20rem]"
         />
@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex gap-5 items-center text-3xl font-extrabold text-gray-200">
           <img
             className="md:h-16 h-12"
-            src="images/illu-logo.png"
+            src="/images/illu-logo.png"
             alt="illu-logo"
           />{" "}
           Zero
