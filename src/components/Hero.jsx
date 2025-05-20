@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <main className="relative w-full h-screen overflow-hidden flex justify-center mb-[10%]">
+    <main className="relative w-full h-screen overflow-hidden flex justify-center">
       <video
         src="../../public/videos/hero.mp4"
         autoPlay

@@ -1,3 +1,5 @@
+import Spline from "@splinetool/react-spline";
+import { AnimatePresence, motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { useState } from "react";
 
@@ -33,7 +35,7 @@ const Characters = () => {
       {/* TITLE */}
       <div className="relative z-10 pt-6 text-center">
         <h1
-          className="text-5xl font-bold tracking-widest md:mb-14 mb-8"
+          className="text-5xl font-bold tracking-widest md:mb-0 mb-8"
           style={{ textShadow: "0 0 10px rgba(255, 255, 255, 0.7)" }}
         >
           FIGHTERS
@@ -110,7 +112,10 @@ const Characters = () => {
           {/* AVATAR SELECTION CARDS */}
           <div className="grid grid-cols-2 gap-4">
             {/* VIKI CARD */}
-            <div className="relative bg-gray-900/70 backdrop-blur-sm rounded-lg p-3 border flex lg:flex-row flex-col justify-between px-12 items-center cursor-pointer transition-all duration-300" onClick={() => setSelectedAvatar("VIKI")}>
+            <div
+              className="relative bg-gray-900/70 backdrop-blur-sm rounded-lg p-3 border flex lg:flex-row flex-col justify-between px-12 items-center cursor-pointer transition-all duration-300"
+              onClick={() => setSelectedAvatar("VIKI")}
+            >
               <div className="text-lg mb-2">VIKI</div>
               {/* AVATAR VISUAL PLACEHOLDER */}
               <div className="w-20 h-20 bg-gray-800/50 rounded-md flex items-center justify-center mb-2">
@@ -128,7 +133,10 @@ const Characters = () => {
               )}
             </div>
             {/* EVA CARD */}
-            <div className="relative bg-gray-900/70 backdrop-blur-sm rounded-lg p-3 border flex lg:flex-row flex-col justify-between px-12 items-center cursor-pointer transition-all duration-300" onClick={() => setSelectedAvatar("EVA")}>
+            <div
+              className="relative bg-gray-900/70 backdrop-blur-sm rounded-lg p-3 border flex lg:flex-row flex-col justify-between px-12 items-center cursor-pointer transition-all duration-300"
+              onClick={() => setSelectedAvatar("EVA")}
+            >
               <div className="text-lg mb-2">EVA</div>
               {/* AVATAR VISUAL PLACEHOLDER */}
               <div className="w-20 h-20 bg-gray-800/50 rounded-md flex items-center justify-center mb-2">
@@ -146,6 +154,34 @@ const Characters = () => {
               )}
             </div>
           </div>
+        </div>
+        {/* RIGHT SIDE CONTAINER */}
+        <div className="relative md:w-2/4 w-full md:h-full h-80 flex items-center justify-center overflow-hidden">
+          <AnimatePresence mode="wait">
+            {selectedAvatar === "VIKI" ? (
+              <motion.div
+                key="VIKI"
+                className="absolute inset-0"
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "-100%" }}
+                transition={{ duration: 0.5 }}
+              >
+                <Spline scene="https://prod.spline.design/FBB1GC1dZ-xTA6cQ/scene.splinecode" />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="EVA"
+                className="absolute inset-0"
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "-100%" }}
+                transition={{ duration: 0.5 }}
+              >
+                <Spline scene="https://prod.spline.design/4cHg6FawFWC5CKdO/scene.splinecode" />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>
