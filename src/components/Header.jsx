@@ -78,7 +78,7 @@ const Header = () => {
             href="#"
             className="relative py-1 text-lg hover:text-purple-300 transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-300 after:transition-all hover:after:w-full text-nowrap"
           >
-            <i class="bx  bx-diamond-alt"></i> Arena
+            <i class="bx  bx-diamond"></i> Arena
           </a>
           <a
             href="#"
