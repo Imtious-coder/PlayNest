@@ -181,7 +181,7 @@ const Characters = () => {
               <div className="text-lg mb-2">VIKI</div>
               {/* AVATAR VISUAL PLACEHOLDER */}
               <div className="w-20 h-20 bg-gray-800/50 rounded-md flex items-center justify-center mb-2">
-                <img src="../../public/images/VIKI.png" alt="Viki Avatar" />
+                <img src="public/images/VIKI.png" alt="Viki Avatar" />
               </div>
               {/* STAR RATING */}
               <div className="flex items-center">
@@ -202,7 +202,7 @@ const Characters = () => {
               <div className="text-lg mb-2">EVA</div>
               {/* AVATAR VISUAL PLACEHOLDER */}
               <div className="w-20 h-20 bg-gray-800/50 rounded-md flex items-center justify-center mb-2">
-                <img src="../../public/images/EVA.png" alt="EVA Avatar" />
+                <img src="public/images/EVA.png" alt="EVA Avatar" />
               </div>
               {/* STAR RATING */}
               <div className="flex items-center">
